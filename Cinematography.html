@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cinematography</title>
+    <style>
+   
+        .hero {
+            background-image: url('./cine.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 150px 0;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+        .gallery .item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .gallery .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url('./play.png') center/cover no-repeat;
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery .item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery .item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery .item:hover .play-button {
+            opacity: 1;
+        }
+        .contact {
+            background-color:#333;
+            text-align: center;
+            padding: 50px 0;
+            color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 24px;
+        }
+        .search-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .search-input {
+        width: 70%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+      }
+
+      .search-button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .search-button:hover {
+        background-color: #17811d; 
+      }
+      footer{
+        background:#17811d;
+      }
+      .custom-heading {
+            font-size: 50px;
+        }
+</style>
+</head>
+<body class="bg-light">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand " href="#">Cinematography Studio</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Our Cinematography Studio</h1>
+        <p>Where Stories Come to Life</p>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mx-auto">
+                <div class="search-bar">
+                  <input type="text" class="search-input" placeholder="Search for photos...">
+                  <button class="search-button">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="jumbotron text-center bg-light">
+        <h1 class="display-4"> "Journey into the Cinematic World."</h1>
+        <p class="lead">Cinematic magic that unfolds frame by frame.</p>
+    </div>
+   
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="item">
+                        <div class="container">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video autoplay muted cantrols><source src="Cinematic2.mp4" type="video/mp4"></source></video>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <a href="#" class="play-button"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="item">
+                        <div class="container">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video autoplay muted cantrols><source src="Cinematic3.mp4" type="video/mp4"></source></video>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <a href="#" class="play-button"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="item">
+                        <div class="container">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video autoplay muted cantrols><source src="Cinematic1.mp4" type="video/mp4"></source></video>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <a href="#" class="play-button"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+      <h1 class="custom-heading display-3 text-center">Cinematic Series</h1>
+     </div>
+
+
+     <!-- Image Classes -->
+
+     <div class="container-fluid p-5">
+        <div class="row mt-5" >
+          <div class="col-lg-4">
+            <img src="cine1.jpeg" class="img-fluid"/>
+          </div>
+
+     <!-- Paragraph Classes -->
+           
+           
+     <div class="col-lg-8 col-sm-12 pe-3">
+        <p align="justify">Certainly, if you'd like to create a paragraph related to the caption 
+            "Journey into the Cinematic World" for your cinematic video or project, you could use the following:
+            "Embark on a mesmerizing journey into the cinematic world, where every frame is a portal to another 
+            dimension. It's a realm of emotions, storytelling, and visual poetry. As the screen comes to life, 
+            you'll find yourself immersed in the art of visual storytelling, where the magic of the silver screen 
+            unfolds before your eyes. Join us as we explore the depths of creativity and the power of cinema to 
+            transport you to new realms of imagination and wonder. It's a journey that transcends time and place,
+            leaving you captivated by the beauty and depth of cinematic artistry."
+            
+            This paragraph sets the stage for an exciting cinematic experience, inviting viewers to step into the
+            captivating world of cinema.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-lg-8 col-sm-12 pe-3">
+        <p align="justify">Prepare to be transported to a cinematic world unlike any other.
+          As you journey deeper into this mesmerizing realm, each frame becomes a gateway
+          to emotion, drama, and boundless imagination. The art of visual storytelling unfolds
+          before your eyes, weaving tales that resonate with your soul. With every scene, you'll
+          be captivated by the magic of the silver screen and the artistry that brings stories to life.
+          It's a journey that transcends time and place, leaving you in awe of the cinematic world's
+          power to inspire, entertain, and connect. Welcome to a world where dreams and reality coexist,
+          and the beauty of cinema knows no bounds.
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="cine2.jpeg" class="img-fluid" alt="Cinematic Image">
+      </div>
+    </div>
+  </div>
+
+
+      <!--Pagination classes-->
+
+
+      <nav aria-label="Page navigation example mt-5">
+        <ul class="pagination justify-content-center mt-5">
+        <li class="page-item">
+            <a class="page-link" href="template.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="template.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="Videography.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="Wildlife_Photography.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="Videography.html">Next</a>
+        </li>
+        </ul>
+    </nav>
+
+
+    <!-- Contact Section -->
+    <footer class="text-light p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <p>Email: info@example.com</p>
+              <p>Phone: (123) 456-7890</p>
+              <p>Address: 123 Main St, City, Country</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="template.html" class="text-light">Home</a></li>
+                <li><a href="#" class="text-light">Portfolio</a></li>
+                <li><a href="#" class="text-light">Services</a></li>
+                <li><a href="#" class="text-light">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Follow Us</h4>
+              <i class="fa-brands fa-facebook-f" style="margin-right: 10px;"></i><a href="#" class="text-light">Facebook</a><br>
+              <i class="fa-brands fa-instagram" style="margin-right: 10px;"></i><a href="#" class="text-light">Instagram</a><br>
+              <i class="fa-brands fa-twitter" style="color: #ffffff; margin-right: 10px;"></i><a href="#" class="text-light">Twitter</a><br>
+            </div>
+          </div>
+          <hr class="bg-light mt-5">
+          <p>© 2023 Your Photography Website</p>
+        </div>
+      </footer>
+    
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
