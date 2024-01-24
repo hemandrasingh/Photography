@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videography</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+          body {
+            background-color: #f2f2f2;
+        }
+        h1 {
+            background-color: #fff;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            border: 1px solid #fff;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+        }
+        .header-video {
+            position: relative;
+            background: url('./cine1.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        footer {
+            background-color: #17811d;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer-contact {
+            font-size: 16px;
+        }
+
+        .social-icons {
+            margin-top: 20px;       
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand text-dark" href="#">videography</a><i class="fa-solid fa-video"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <header class="header-video">
+        <div class="video-overlay"></div>
+        <div class="container">
+            <div class="header-content">
+                <h1>Welcome to Our Video Gallery</h1>
+                <p>Your message or call-to-action here</p>
+                <a class="btn btn-primary" href="#">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Paragraph Classes -->
+
+    <div class="jumbotron text-center" style="background:#f2f2f2;">
+        <h2 class="display-4"> "Journey into the Cinematic World."</h2>
+        <h3 class="lead">Cinematic magic that unfolds frame by frame.</h3>
+    </div>
+
+    <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 pe-3">
+            <p align="justify">Step into the enchanting realm of videography, where each frame is a portal to a world 
+                of emotion, drama, and limitless imagination. Visual storytelling becomes an art form, captivating your 
+                senses and resonating with your very soul. With each scene, the silver screen's magic and the artisans 
+                behind it come to life, leaving you in awe of the power of the cinematic world to inspire, entertain, 
+                and connect. In this wondrous space where dreams and reality coexist, videography knows no boundaries – it's 
+                a medium that breathes life into stories, casting a spell that keeps you entranced from start to finish.
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video autoplay muted cantrols><source src="video1.mp4" type="video/mp4"></source></video>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <a href="#" class="play-button"></a>
+          </div>
+        </div>
+      </div>
+
+   <!-- Gallery Section -->
+
+   <div class="container mt-5">
+    <h6 class=" display-4 text-center"> videography Gallery Series</h6>
+   </div>
+
+
+   <section class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <div class="item">
+                    <div class="container">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video autoplay muted cantrols><source src="video2.mp4" type="video/mp4"></source></video>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#" class="play-button"></a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="item">
+                    <div class="container">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video autoplay muted cantrols><source src="video3.mp4" type="video/mp4"></source></video>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#" class="play-button"></a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="item">
+                    <div class="container">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video autoplay muted cantrols><source src="4.mp4" type="video/mp4"></source></video>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#" class="play-button"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Paragraph Classes -->
+       
+    <div class="container p-3 mt-5">
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-12 mt-5">
+                <div class="container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video autoplay muted cantrols><source src="video4.mp4" type="video/mp4"></source></video>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                <a href="#" class="play-button"></a>
+              </div>
+
+            <div class="col-lg-8 col-sm-12 pe-3 mt-4">
+                <p align="justify">Certainly, if you'd like to create a paragraph related to the caption 
+                    "Journey into the Cinematic World" for your cinematic video or project, you could use the following:
+                    "Embark on a mesmerizing journey into the cinematic world, where every frame is a portal to another 
+                    dimension. It's a realm of emotions, storytelling, and visual poetry. As the screen comes to life, 
+                    you'll find yourself immersed in the art of visual storytelling, where the magic of the silver screen 
+                    unfolds before your eyes. Join us as we explore the depths of creativity and the power of cinema to 
+                    transport you to new realms of imagination and wonder. It's a journey that transcends time and place,
+                    leaving you captivated by the beauty and depth of cinematic artistry."
+                    
+                    This paragraph sets the stage for an exciting cinematic experience, inviting viewers to step into the
+                    captivating world of cinema. It's a realm of emotions, storytelling, and visual poetry. As the screen comes
+                    to life, you'll find yourself immersed in the art of visual storytelling, where the magic of the silver screen
+                    unfolds before your eyes. Join us as we explore the depths of creativity and the power of cinema to transport
+                    you to new realms of imagination and wonder. It's a journey that transcends time and place, leaving you captivated
+                    by the beauty and depth of cinematic artistry.</p>
+                    </div>
+                  </div>
+            </div>
+
+              <!--Pagination classes-->
+
+
+            <nav aria-label="Page navigation example mt-5">
+                <ul class="pagination justify-content-center mt-5">
+                <li class="page-item">
+                    <a class="page-link" href="Cinematography.html" >Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="template.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Cinematography.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="Wildlife_Photography.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="Wildlife_Photography.html">Next</a>
+                </li>
+                </ul>
+            </nav>
+
+            <!-- footer Classes -->
+
+            <footer class="text-light p-5 mt-5">
+                <div class="container">
+                <h2 class="footer-logo">Videography</h2>
+                  <div class="row mt-5">
+                    <div class="col-md-4">
+                      <h4>Contact Us</h4>
+                      <h6 class="mt-2">Email: info@example.com</h6>
+                      <h6>Phone: (123) 456-7890</h6>
+                      <h6>Address: 123 Main St, City, Country</h6>
+                    </div>
+                    <div class="col-md-4">
+                      <h4>Quick Links</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="template.html" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">Portfolio</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 social-icons">
+                      <h4>Follow Us</h4>
+                      <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                  </div>
+                  <hr class="bg-light mt-5">
+                  <h5>© 2023 Your Photography Website</h5>
+                </div>
+              </footer>
+
+        
+
+
+
+            
+<!-- Add more video elements as needed -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

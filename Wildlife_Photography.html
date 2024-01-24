@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wildlife Photography</title>
+    <style>
+   
+        .hero {
+            background-image: url('./bgimgwd.jpeg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 150px 0;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .gallery .item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .gallery .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery .item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery .item:hover .overlay {
+            opacity: 1;
+        }
+       footer {
+            background: #17811d;
+        }
+
+        .custom-heading {
+            font-size: 50px;
+        }
+        .photography-awards {
+        padding: 50px 0;
+        }
+
+        .section-heading {
+        font-size: 36px;
+        text-align: center;
+        }
+
+        .award-item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        }
+
+        .award-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+        }
+
+        .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        }
+
+        .overlay h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        }
+
+        .overlay p {
+        font-size: 16px;
+        }
+
+        .award-item:hover img {
+        transform: scale(1.05);
+        }
+
+        .award-item:hover .overlay {
+        opacity: 1;
+        }
+        
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wildlife Photography</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Our Wildlife Photography</h1>
+        <p>Capturing the Beauty of the Wild</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="custom-heading display-3 text-center">Wildlife Photography Showcase</h1>
+    </div>
+
+    <!-- Image Classes -->
+
+    <div class="container-fluid p-5">
+        <div class="row mt-5" >
+          <div class="col-lg-4">
+            <img src="and.jpeg" class="img-fluid"/>
+          </div>
+
+     <!-- Paragraph Classes -->
+           
+           
+     <div class="col-lg-8 col-sm-12 pe-3">
+        <p align="justify">"Wildlife photography is an awe-inspiring art form that captures the beauty and majesty of the natural world.
+             It allows us to witness the untamed wonders of the animal kingdom and the intricate dance of life in its purest form. With
+             each click of the camera, a story unfolds – a story of resilience, survival, and the delicate balance of our planet's ecos
+             ystems. It's a testament to the patience and dedication of photographers who venture deep into the wild, waiting for that 
+             perfect moment when the eyes of a predator meet those of its prey or when a bird takes flight. In the world of wildlife 
+             photography, every frame is a masterpiece, every shot a tribute to the breathtaking diversity of life on Earth. As you explore
+             our wildlife photography showcase, you'll embark on a visual journey through lush forests, vast savannas, and untamed wilderness,
+             where the magic of the animal kingdom comes to life before your eyes.This paragraph emphasizes the importance and wonder of wildlife
+              photography, showcasing it as a medium that allows us to connect with the natural world and appreciate its extraordinary beauty."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h6 class="custom-heading display-3 text-center">"Explore the Wild: Our Wildlife Photography Gallery"</h6>
+    <h2 class="section-heading lead text-center mt-5">( Big Cats )</h2>
+</div>
+   
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="bgimg.jpeg" alt="Wildlife Photo 1">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="ch.jpeg" alt="Wildlife Photo 2">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 award-item">
+              <div class="award">
+                <img src="beer.jpeg" alt="Wildlife Award 1">
+                <div class="overlay">
+                  <h3>Cilck For More</h3>
+                  <p>Jangle Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="container mt-5">
+        <h2 class="section-heading lead text-center">( Birds of Prey )</h2>
+    </div>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="eg.jpeg" alt="Wildlife Photo 1">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="eg1.jpeg" alt="Wildlife Photo 2">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 award-item">
+              <div class="award">
+                <img src="eg2.jpeg" alt="Wildlife Award 1">
+                <div class="overlay">
+                  <h3>Cilck For More</h3>
+                  <p>Jangle Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container mt-5">
+        <h2 class="section-heading lead text-center">( Aquatic Life )</h2>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="w1.jpeg" alt="Wildlife Photo 1">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5">
+              <div class="item">
+                <img src="w2.jpeg" alt="Wildlife Photo 2">
+              </div>
+            </div>
+            <div class="col-md-4 mt-5 award-item">
+              <div class="award">
+                <img src="w3.jpeg" alt="Wildlife Award 1">
+                <div class="overlay">
+                  <h3>Cilck For More</h3>
+                  <p>Jangle Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Paragraph Classes -->
+           
+           
+     <div class="col-lg-12 col-sm-12 p-5 mt-5">
+        <p align="justify">The world's wildlife is not only a source of wonder but also an essential component of our 
+            planet's biodiversity. Biodiversity is the foundation of ecosystem health, providing a myriad of ecosystem 
+            services, from oxygen production to regulating climate and purifying water. Wildlife, including the
+            charismatic megafauna like elephants and whales, as well as the inconspicuous yet vital creatures such
+            as bacteria and fungi, collectively contribute to the functioning of our natural world. However, human
+            activities, from deforestation to pollution, are pushing many species to the brink of extinction. 
+            Protecting and preserving wildlife is not just a moral imperative but also a matter of self-interest, 
+            as our well-being is intimately linked to the health of the natural world. Efforts to conserve and 
+            restore habitats, combat illegal wildlife trade, and address climate change are all part of the broader
+            mission to safeguard the rich tapestry of life on Earth for generations to come.</p>
+      </div>
+
+
+     <!--Pagination classes-->
+
+
+     <nav aria-label="Page navigation example mt-5">
+        <ul class="pagination justify-content-center mt-5">
+        <li class="page-item">
+            <a class="page-link" href="Videography.html">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="template.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="Cinematography.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="Videography.html">3</a></li>
+        <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+        </li>
+        </ul>
+    </nav>
+    
+
+    <!-- Contact Section -->
+    <footer class="text-light p-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Main St, City, Country</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">Portfolio</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <i class="fa-brands fa-facebook-f" style="margin-right: 10px;"></i><a href="#" class="text-light">Facebook</a><br>
+                    <i class="fa-brands fa-instagram" style="margin-right: 10px;"></i><a href="#" class="text-light">Instagram</a><br>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff; margin-right: 10px;"></i><a href="#" class="text-light">Twitter</a><br>
+                </div>
+            </div>
+            <hr class="bg-light mt-5">
+            <p>© 2023 Wildlife Photography Studio</p>
+        </div>
+   
